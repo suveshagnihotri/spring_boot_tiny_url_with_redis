@@ -1,0 +1,5 @@
+FROM openjdk:8-jdk-alpine
+EXPOSE 8080
+ADD target/tiny-url-0.0.1-SNAPSHOT.jar tiny-url.jar
+ENTRYPOINT ["java","-jar","/tiny-url.jar"]
+
